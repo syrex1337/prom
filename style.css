@@ -1,104 +1,96 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", sans-serif;
   margin: 0;
-  background-color: #f9f9f9;
+  background-color: #f6f6f6;
+  color: #202122;
 }
 
-header {
-  background-color: #2f80ed;
-  padding: 1rem;
-  color: white;
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
-.container {
+header .logo {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.search-block {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-.search {
-  flex-grow: 1;
-  padding: 0.5rem;
-  border: none;
+.search-input {
+  padding: 0.6rem;
+  width: 60%;
+  border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 1rem;
+}
+
+.search-btn,
+.random-btn {
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
 }
 
 .search-btn {
-  padding: 0.5rem 1rem;
-  background-color: white;
-  color: #2f80ed;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  background-color: #3366cc;
+  color: white;
 }
 
-.categories {
+.search-btn:hover {
+  background-color: #274c9c;
+}
+
+.random-btn {
+  background-color: #e2e2e2;
+  color: #202122;
+}
+
+.random-btn:hover {
+  background-color: #d0d0d0;
+}
+
+.languages h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.languages ul {
+  list-style: none;
+  padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  padding: 1rem;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
 }
 
-.categories a {
+.languages li a {
   text-decoration: none;
-  color: #2f80ed;
-  font-weight: bold;
+  color: #3366cc;
+  font-weight: 500;
 }
 
-.products {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  padding: 2rem;
-}
-
-.product {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  width: 200px;
-  padding: 1rem;
-  text-align: center;
-}
-
-.product img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.product h3 {
-  font-size: 1.1rem;
-  margin: 0.5rem 0;
-}
-
-.product p {
-  font-weight: bold;
-  color: #27ae60;
-}
-
-.product button {
-  background-color: #2f80ed;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  margin-top: 0.5rem;
-  border-radius: 5px;
-  cursor: pointer;
+.languages li a:hover {
+  text-decoration: underline;
 }
 
 footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #f0f0f0;
+  margin-top: 3rem;
   font-size: 0.9rem;
-  margin-top: 2rem;
+  color: #777;
 }
