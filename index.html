@@ -1,51 +1,38 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Prom — Клон</title>
+  <title>Википедия — Клон</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="logo">Prom.ua</div>
-      <input type="text" placeholder="Пошук товарів..." class="search" />
-      <button class="search-btn">🔍</button>
-    </div>
-  </header>
+  <div class="wrapper">
+    <header>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Wikipedia_wordmark.svg/200px-Wikipedia_wordmark.svg.png" alt="Wikipedia Logo" class="logo">
+      <h1>Свободная энциклопедия</h1>
+    </header>
 
-  <nav class="categories">
-    <a href="#">Одяг</a>
-    <a href="#">Техніка</a>
-    <a href="#">Дім і сад</a>
-    <a href="#">Іграшки</a>
-    <a href="#">Автотовари</a>
-  </nav>
+    <section class="search-block">
+      <input type="text" placeholder="Найти статью..." class="search-input">
+      <button class="search-btn">🔍 Поиск</button>
+    </section>
 
-  <main class="products">
-    <div class="product">
-      <img src="https://via.placeholder.com/150" alt="Товар" />
-      <h3>Смартфон Xiaomi</h3>
-      <p>4 999 грн</p>
-      <button>Купити</button>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/150" alt="Товар" />
-      <h3>Навушники JBL</h3>
-      <p>1 199 грн</p>
-      <button>Купити</button>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/150" alt="Товар" />
-      <h3>Електрочайник</h3>
-      <p>699 грн</p>
-      <button>Купити</button>
-    </div>
-  </main>
+    <section class="languages">
+      <h2>Выберите язык</h2>
+      <ul>
+        <li><a href="#">Русский</a></li>
+        <li><a href="#">English</a></li>
+        <li><a href="#">Українська</a></li>
+        <li><a href="#">Deutsch</a></li>
+        <li><a href="#">Français</a></li>
+        <li><a href="#">Español</a></li>
+      </ul>
+    </section>
 
-  <footer>
-    <p>Клон Prom.ua © 2025</p>
-  </footer>
+    <footer>
+      <p>Клон Википедии © 2025 — для демонстрации</p>
+    </footer>
+  </div>
 </body>
 </html>
